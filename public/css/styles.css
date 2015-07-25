@@ -15,8 +15,11 @@ li {
 	list-style-type: disc;
 }
 
+h6 {
+	border-bottom: 1px solid #eee;
+}
+
 #content {
-	/*width: 800px;*/
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -52,17 +55,7 @@ li {
 }
 
 #room-list {
-	float: right;
-	width: 100%;
 	padding: 1em;
-}
-
-#room-list div {
-	border-bottom: 1px solid #eee;
-}
-
-#room-list div:hover {
-	background: #ddd;
 }
 
 #send-message {
