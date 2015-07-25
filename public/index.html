@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chat</title>
+	<link rel="stylesheet" href="css/skeleton-2.0.0/css/normalize.css">
+	<link rel="stylesheet" href="css/skeleton-2.0.0/css/skeleton.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+		
+	<div class="row">
+
+		<div class="twelve columns" id="content">
+			<div id="room"><h6>Room</h6></div>
+			<div id="room-list"><h6>Room List</h6></div>
+			<div id="messages"><h6>Messages</h6></div>
+
+			<form id="send-form">
+				<input type="text" id="send-message">
+				<input type="submit" id="send-button" value="Send">
+
+				<div class="help">
+					<h6>Chat commands:</h6>
+					<ul>
+						<li>Change nickname: <code>/nick [username]</code></li>
+						<li>Join/create room: <code>/join [room name]</code></li>
+					</ul>
+				</div>
+			</form>
+		</div><!-- /content -->
+
+	</div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/chat_ui.js"></script>
+
+</body>
+</html>
